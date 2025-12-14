@@ -1,6 +1,9 @@
-# Python Demo Apps
+###  Python Demo Apps
+
 
 DATA TYPES : 
+
+---
 
 List demo : https://shoppingg.streamlit.app/
 
