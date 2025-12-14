@@ -46,9 +46,9 @@ with tab1:
 # CUSTOMER TAB
 # =======================================
 with tab2:
-    st.header("🛍 Customerzz")
+    st.header("🛍 yo Customerzz")
 
-    st.subheader("🧾 All i got")
+    st.subheader("🧾 Thats All i got man")
     st.write(store)
 
     item = st.text_input("Enter only one item name to buy")
