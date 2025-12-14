@@ -27,31 +27,31 @@ tab1, tab2 = st.tabs(["🧑‍💼 Shopkeeper", "🛍 Customer"])
 # SHOPKEEPER TAB
 # =======================================
 with tab1:
-    st.header("🧑‍💼 Shopkeeper Panel")
+    st.header("🧑‍💼 Money Minded Shopkeeper ")
 
     st.subheader("📦 Current Store Items")
     st.write(store)
 
-    st.subheader("➕ Add / Update Item")
+    st.subheader("➕ Add new Item ")
 
     item_name = st.text_input("Item name")
     item_price = st.number_input("Item price", min_value=1)
 
-    if st.button("Add / Update Item"):
+    if st.button("Add this "):
         store[item_name] = item_price
-        st.success(f"{item_name} added/updated successfully!")
+        st.success(f"{item_name} added successfully!")
         st.write("Updated Store:", store)
 
 # =======================================
 # CUSTOMER TAB
 # =======================================
 with tab2:
-    st.header("🛍 Customer Panel")
+    st.header("🛍 Customerzz")
 
-    st.subheader("🧾 Available Items")
+    st.subheader("🧾 All i got")
     st.write(store)
 
-    item = st.text_input("Enter item name to buy")
+    item = st.text_input("Enter only one item name to buy")
     quantity = st.number_input("Enter quantity", min_value=1)
 
     if st.button("Generate Bill"):
