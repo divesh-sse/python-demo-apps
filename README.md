@@ -18,3 +18,9 @@ Dict demo : https://grocerrystore.streamlit.app/
 
 
 ---
+
+Tuple Demo - https://bookmovie.streamlit.app/
+
+COLAB LINK
+
+---
