@@ -24,3 +24,7 @@ Tuple Demo - https://bookmovie.streamlit.app/
 [COLAB LINK](https://colab.research.google.com/drive/1pUlSaSwmqv5K3XMegMFW3QZdIRzETdyP?usp=sharing)
 
 ---
+
+Sets - 
+
+[COLAB LINK](https://colab.research.google.com/drive/1Ngnc42zKHMudFagYgwKMAYVLoQj0wb31?usp=sharing) 
