@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("🎧 Music Interest Analyzer")
 
-st.write("Just list the genres you like and your friend")
+st.write("Just list the genres you like and your friend likes")
 st.write("Remember how when you login spotify  it asks you what kind of music you like")
 
 # ------------------------------------
