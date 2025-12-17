@@ -1,57 +1,72 @@
+
 import streamlit as st
 
 st.title("🎧 Student Music Interest Analyzer")
-st.write("This app demonstrates Python SETS using music preferences")
+st.write("Understanding LIST vs SET using music genres")
 
 # ------------------------------------
-# INPUT FROM STUDENTS
+# LIST OF GENRES (FIXED OPTIONS)
 # ------------------------------------
+genres_list = [
+    "Rock",
+    "Pop",
+    "Jazz",
+    "Hip Hop",
+    "Classical",
+    "EDM",
+    "Country",
+    "Blues",
+    "Metal",
+    "Reggae"
+]
 
-st.header("🎵 Enter Music Genres")
+st.subheader("🎵 Available Genres (LIST)")
+st.write(genres_list)
 
-genres1 = st.text_input(
-    "Student 1 - Enter genres (comma separated)",
-    "Rock, Pop, Jazz, Hip Hop"
+# ------------------------------------
+# STUDENT SELECTION (FROM LIST)
+# ------------------------------------
+st.header("🎧 Select Music Genres")
+
+student1_selection = st.multiselect(
+    "Student 1 - Select genres",
+    genres_list,
+    default=["Rock", "Pop", "Jazz"]
 )
 
-genres2 = st.text_input(
-    "Student 2 - Enter genres (comma separated)",
-    "Pop, Classical, Jazz, EDM"
+student2_selection = st.multiselect(
+    "Student 2 - Select genres",
+    genres_list,
+    default=["Pop", "Jazz", "EDM"]
 )
 
 # ------------------------------------
-# CONVERT INPUT TO SETS
+# CONVERT LIST TO SET
 # ------------------------------------
-
-student1 = set(genres1.split(","))
-student2 = set(genres2.split(","))
-
-# Remove extra spaces
-student1 = {g.strip() for g in student1}
-student2 = {g.strip() for g in student2}
+student1_set = set(student1_selection)
+student2_set = set(student2_selection)
 
 # ------------------------------------
 # DISPLAY SETS
 # ------------------------------------
+st.subheader("📌 Student Genre Sets (Unique Values)")
 
-st.subheader("🎧 Student Sets (Unique Genres Only)")
-st.write("Student 1 Genres:", student1)
-st.write("Student 2 Genres:", student2)
+st.write("Student 1 Set:", student1_set)
+st.write("Student 2 Set:", student2_set)
 
 # ------------------------------------
 # SET OPERATIONS
 # ------------------------------------
+st.header("🔍 Set Operations")
 
-st.header("🔍 Set Operations Results")
+common_genres = student1_set & student2_set
+all_genres = student1_set | student2_set
+only_student1 = student1_set - student2_set
+only_student2 = student2_set - student1_set
 
-common = student1 & student2
-all_genres = student1 | student2
-only_student1 = student1 - student2
-only_student2 = student2 - student1
-
-st.write("🤝 Common Genres:", common)
+st.write("🤝 Common Genres:", common_genres)
 st.write("🌍 All Unique Genres:", all_genres)
 st.write("🎯 Only Student 1 Likes:", only_student1)
 st.write("🎯 Only Student 2 Likes:", only_student2)
 
-st.success("✅ SET concepts demonstrated successfully!")
+st.success("✅ LIST → SET → SET OPERATIONS demonstrated clearly!")
