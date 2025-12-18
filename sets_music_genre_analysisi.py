@@ -19,10 +19,17 @@ genres_list = [
     "Techno",
     "Retro",
     "Metal",
-    "Drill"
+    "Drill",
+    "R & B",
+    "House",
+    "Bollywood",
+    "K-pop",
+    "Desi Hip hop",
+    "Country"
 ]
 
 st.subheader("🎵 Available Genres (LIST)")
+st.write("FInd yours , if you cant , you can program your own version ")
 st.write(genres_list)
 
 # ------------------------------------
