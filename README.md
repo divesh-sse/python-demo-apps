@@ -39,4 +39,11 @@ IF else : https://guesit.streamlit.app/
 
 Nested If : https://sseatm.streamlit.app/
 
-[COLAB LINK](https://colab.research.google.com/drive/1F0X-PyWiTIQZE2Gno07K5oOt81yw4eHz?usp=sharing)
+
+--- 
+
+Functions : https://letsgodating.streamlit.app/
+
+[COLAB LINK](https://colab.research.google.com/drive/1THoJaAxbEK913iDKqgrJ7AQI-7BZb3A8?usp=sharing) 
+
+
