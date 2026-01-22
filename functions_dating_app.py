@@ -31,10 +31,11 @@ def is_match(score):
 
 # ---------------- STREAMLIT UI ---------------- #
 
-st.set_page_config(page_title="Campus Dating App", page_icon="💘")
+st.set_page_config(page_title="Dating App", page_icon="💘")
 
-st.title("💘 Campus Dating App")
+st.title("💘 Dating App")
 st.write("Find out if it's a match based on simple compatibility rules!")
+st.write("We are not initialiting a love story here , its just an app you are still single")
 
 st.header("👤 Person 1 Details")
 name1 = st.text_input("Name", key="name1")
